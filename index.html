@@ -35,8 +35,15 @@
       <h1>🚀 Better MC 4.5 Modded</h1>
       <p>Oyunun tadını çıkar! Aşağıdan istediğin sürümü indir:</p>
       
-      <button class="btn btn-crack" onclick="indirCrack()">Crackli İndir (yakında)</button>
-      <button class="btn btn-premium" onclick="indirPremium()">Premium (CurseForge) İndir</button>
+      
+      <button class="btn btn-premium" onclick="indirPremium()">Premium/Crack (CF,PRISM) İndir</button>
+    </div>
+	<div class="container">
+      <h1>👌Crack Prism Launcher</h1>
+      <p>Prism Launcher Dosyalar:</p>
+      
+      <button class="btn btn-crack" onclick="indirWindows()">Windows</button>
+      <button class="btn btn-premium" onclick="indirLinux()">Linux (yakında)</button>
     </div>
   </div>
 
@@ -44,6 +51,10 @@
   <script>
     function indirCrack() {
       window.location.href = "downloads/crackli-modpack.zip";
+    }
+	
+	function indirWindows() {
+      window.location.href = "https://github.com/Diegiwg/PrismLauncher-Cracked/releases/download/9.4/PrismLauncher-Windows-MinGW-w64-9.4.zip";
     }
 
     function indirPremium() {
