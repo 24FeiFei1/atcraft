@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BetterMC 4.5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Gradient Arka Plan ve SVG Filter -->
+  <div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="interactive"></div>
+    </div>
+  </div>
+
+  <!-- Ana İçerik -->
+  <div class="text-container">
+    <div class="container">
+      <h1>🚀 Better MC 4.5 Modded</h1>
+      <p>Oyunun tadını çıkar! Aşağıdan istediğin sürümü indir:</p>
+      
+      <button class="btn btn-crack" onclick="indirCrack()">Crackli İndir</button>
+      <button class="btn btn-premium" onclick="indirPremium()">Premium (CurseForge) İndir</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    function indirCrack() {
+      window.location.href = "downloads/crackli-modpack.zip";
+    }
+
+    function indirPremium() {
+      window.location.href = "https://drive.usercontent.google.com/download?id=17M7frsx45PAC9wWKdGNTSOrYhqC2znP3&export=download&authuser=0&confirm=t&uuid=12fb9c56-7a8c-41af-a361-02160a9da27a&at=AN8xHoqtxfdQ5B9Lp2VHSsfJyy9A:1752059070596";
+    }
+  </script>
+</body>
+</html>
